@@ -12,23 +12,29 @@
 
 int main(void)
 {
-	int a = 1;
+	int a = 0;
 
-	printf("%d", a);
-	int b = 2;
+	int b = 1;
 
-	printf(", %d", b);
-	int i;
+	int i, sum;
 
-	for (i = 0; i < 24; i++)
+	for (i = 0; i < 50; i++)
 	{
-		a = a + b;
+		sum = a + b;
 
-		printf(", %d", a);
-		b = b + a;
+		printf("%lu", sum);
 
-		printf(", %d", b);
+		a = b;
+		b = sum;
+
+		if (i == 49)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf(", ");
+		}
 	}
-	_putchar('\n');
 	return (0);
 }
