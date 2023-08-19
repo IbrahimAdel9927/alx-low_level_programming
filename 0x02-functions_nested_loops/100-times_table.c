@@ -20,6 +20,7 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 				sum = i * j;
+
 				if (sum <= 9)
 				printf(" ");
 				if (sum <= 99)
