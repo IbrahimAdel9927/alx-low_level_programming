@@ -2,15 +2,18 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: a C programe use a functions such as void print_alphabet(void).
- *
- * Return: always 0 (success)
+ * a prodram prints alphabet by useing the _putchar function
+ * from "a" to "z"
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void);
+	int i;
+
+	for (i = 97; i <= 122; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
 	return (0);
 }
