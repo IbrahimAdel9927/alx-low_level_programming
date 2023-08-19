@@ -17,6 +17,10 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
+				if (((h * m) % 10) < 1)
+				{
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
