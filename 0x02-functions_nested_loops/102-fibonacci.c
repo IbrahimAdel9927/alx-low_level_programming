@@ -12,10 +12,12 @@
 
 int main(void)
 {
-	int a = 0;
+	int a = 1;
 
-	int b = 1;
+	printf("%d", a);
+	int b = 2;
 
+	printf(", %d", b);
 	int i;
 
 	for (i = 0; i < 24; i++)
