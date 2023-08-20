@@ -3,9 +3,9 @@
 /**
  * _isupper - check the uppercase
  *
- * @a: input for the function
+ * @c: input for the function
  *
- * Return: 1 if a is upper
+ * Return: 1 if c is upper
  * else it return 0
 */
 
