@@ -12,10 +12,10 @@
 
 int main(void)
 {
-	int a = 0;
+	int a = 1;
 
 	printf("%lu", a);
-	int b = 1;
+	int b = 2;
 
 	printf(", %lu", b);
 	int i;
