@@ -14,27 +14,21 @@ int main(void)
 {
 	int a = 0;
 
+	printf("%d", a);
 	int b = 1;
 
-	int i, sum;
+	printf(", %d", b);
+	int i;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 24; i++)
 	{
-		sum = a + b;
+		a = a + b;
 
-		printf("%lu", sum);
+		printf(", %d", a);
+		b = b + a;
 
-		a = b;
-		b = sum;
-
-		if (i == 49)
-		{
-			printf("\n");
-		}
-		else
-		{
-			printf(", ");
-		}
+		printf(", %d", b);
 	}
+	_putchar('\n');
 	return (0);
 }
