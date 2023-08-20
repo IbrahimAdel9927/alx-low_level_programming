@@ -14,20 +14,20 @@ int main(void)
 {
 	int a = 0;
 
-	printf("%d", a);
+	printf("%lu", a);
 	int b = 1;
 
-	printf(", %d", b);
+	printf(", %lu", b);
 	int i;
 
 	for (i = 0; i < 24; i++)
 	{
 		a = a + b;
 
-		printf(", %d", a);
+		printf(", %lu", a);
 		b = b + a;
 
-		printf(", %d", b);
+		printf(", %lu", b);
 	}
 	_putchar('\n');
 	return (0);
