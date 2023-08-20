@@ -22,10 +22,10 @@ int main(void)
 
 	for (i = 0; i < 48; i++)
 	{
-		a = a + b;
+		a += b;
 
 		printf(", %d", a);
-		b = b + a;
+		b += a;
 
 		printf(", %d", b);
 	}
