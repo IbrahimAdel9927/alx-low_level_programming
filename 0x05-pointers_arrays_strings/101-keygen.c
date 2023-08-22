@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	int a;
+	int a = 0;
 	char b;
 
 	srand(time(NULL));
