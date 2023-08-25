@@ -8,7 +8,7 @@
  * @n: the second input
 */
 
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i = 0;
 
