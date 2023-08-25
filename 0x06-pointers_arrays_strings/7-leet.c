@@ -11,7 +11,7 @@
 char *leet(char *s)
 {
 	char *k[] = {'A', 'E', 'O', 'T', 'L'};
-	char *v[] = {4, 2, 0, 7, 1};
+	char *v[] = {4, 3, 0, 7, 1};
 	int i, j;
 
 	i = 0;
