@@ -10,18 +10,19 @@
 
 char *leet(char *s)
 {
+	char *a = s;
 	char *k[] = {'A', 'E', 'O', 'T', 'L'};
 	char *v[] = {4, 3, 0, 7, 1};
-	int i, j;
+	int j;
 
-	i = 0;
-
-	while (s[i])
+	while (*s)
 	{
 		for (j = 0; j < sizeof(k) / sizeof(char); j++)
-			if (s[i] == k[j] || s[i] == k[j] + 32)
-				s[i] = 48 + v[j];
-		i++;
+			if (*s == k[j] || *s == k[j] + 32)
+			{
+				*s = 48 + v[j];
+			}
+		s++;
 	}
-	return (s);
+	return (a);
 }
