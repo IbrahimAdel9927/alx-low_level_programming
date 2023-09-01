@@ -11,6 +11,7 @@
 int main(int a, char *b[] __attribute__((unused)))
 {
 	int i = 0;
+
 	while (a--)
 	{
 		printf("%s\n", b[i]);
