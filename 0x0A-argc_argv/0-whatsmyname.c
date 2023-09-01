@@ -9,7 +9,7 @@
  * Return: always 0
 */
 
-int main(int a, char const *b)
+int main(int a, char const *b[])
 {
 	(void)a;
 	printf("%s\n", b[0]);
