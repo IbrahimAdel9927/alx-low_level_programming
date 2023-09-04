@@ -17,9 +17,7 @@ int **alloc_grid(int a, int b)
 	i = malloc(sizeof(*i) * b);
 
 	if (a <= 0 || b <= 0 || i == 0)
-	{
 		return (NULL);
-	}
 	else
 	{
 		for (x = 0; x < b; x++)
