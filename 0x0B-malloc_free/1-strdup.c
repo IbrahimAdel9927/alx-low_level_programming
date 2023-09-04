@@ -19,8 +19,10 @@ char *_strdup(char *s)
 	int a = 0;
 	char *m;
 
-	for (; s[a] != '\0' ; a++)
-		;
+	while (s[a])
+	{
+		a++;
+	}
 	m = malloc(a * sizeof(*s) + 1);
 
 	if (m == 0)
