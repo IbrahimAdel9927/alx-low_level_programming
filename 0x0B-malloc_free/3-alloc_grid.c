@@ -18,25 +18,22 @@ int **alloc_grid(int a, int b)
 
 	if (a <= 0 || b <= 0 || i == 0)
 		return (NULL);
-	else
-	{
-		for (x = 0; x < b; x++)
+	for (x = 0; x < b; x++)
 		{
-			i[x] = malloc(sizeof(**i) * a);
+		i[x] = malloc(sizeof(**i) * a);
 
-			if (i[x] == 0)
+		if (i[x] == 0)
+		{
+			while (i--)
 			{
-				while (i--)
-				{
-					free(i[x]);
-				}
-				free(i);
-				return (NULL);
+				free(i[x]);
 			}
-			for (y = 0; y < a; y++)
-			{
-				i[x][y] = 0;
-			}
+			free(i);
+			return (NULL);
+		}
+		for (y = 0; y < a; y++)
+		{
+			i[x][y] = 0;
 		}
 	}
 	return (i);
