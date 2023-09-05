@@ -1,24 +1,42 @@
 #include "main.h"
 
 /**
+ * _strlen - finf length
+ *
+ * @s: the input
+ *
+ * Return: int
+*/
+
+int _strlen(char *s)
+{
+	int g = 0;
+
+	for (; s[g] != '\0' ; g++)
+		;
+	return (g);
+}
+
+/**
  * argstostr - a function that concatenates all the
  * arguments of your program.
  *
  * @a: first input
  * @b:second input
  *
- * Return : NULL if ac == 0 or av == NULL
- * and a pointer to a new string, or NULL if it fails
+ * Description: it return null
+ *
+ * Return: a string
 */
 
-char *argstostr(int a, char **b);
+char *argstostr(int a, char **b)
 {
 	int i = 0, j = 0, n = 0, c = 0;
 	char *s;
 
 	if (a == 0 || b == NULL)
 		return (NULL);
-	for (; i < a ; i++ , n++)
+	for (; i < a ; i++, n++)
 		n += _strlen(b[i]);
 	s = malloc(sizeof(char) * n + 1);
 	if (s == 0)
