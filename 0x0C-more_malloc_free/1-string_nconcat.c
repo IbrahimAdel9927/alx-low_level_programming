@@ -18,20 +18,30 @@ char *string_nconcat(char *a, char *b, unsigned int n)
 	unsigned int i, j, c, d;
 
 	if (a == NULL)
+	{
 		a = "";
+	}
 	if (b == NULL)
+	{
 		b = "";
+	}
 	for (c = 0; a[c] != '\0'; c++)
 		;
 	for (d = 0; b[d] != '\0'; d++)
 		;
 	x = malloc(c + n + 1);
 	if (x == NULL)
+	{
 		return (NULL);
+	}
 	for (i = 0; a[i] != '\0'; i++)
+	{
 		x[i] = a[i];
+	}
 	for (j = 0; b[j] != '\0'; j++, i++)
+	{
 		x[i] = b[j];
+	}
 	x[i] = '\0';
 	return (x);
 }
