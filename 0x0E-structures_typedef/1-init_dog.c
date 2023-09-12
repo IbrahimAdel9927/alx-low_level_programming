@@ -1,4 +1,4 @@
-#include "dog.h"
+#include "main.h"
 
 /**
  * init_dog -  a function that initialize a
