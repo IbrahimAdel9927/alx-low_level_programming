@@ -11,7 +11,7 @@
  * Return: always 0
 */
 
-int main(it argc, char **argv)
+int main(int argc, char **argv)
 {
 	int (*op_func)(int, int), x, y;
 
@@ -24,7 +24,7 @@ int main(it argc, char **argv)
 	if (!op_func)
 		printf("Error\n"), exit(99);
 
-	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
+	if (!y && (argv[2][0] == '/' || argv[2][0] == '%'))
 		printf("Error\n"), exit(100);
 
 	printf("%d\n", op_func(x, y));
