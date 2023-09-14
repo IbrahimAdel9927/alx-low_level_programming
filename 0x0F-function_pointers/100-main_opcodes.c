@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "fuction_pointers.h"
+#include "function_pointers.h"
 
 /**
  * main - Entry point
