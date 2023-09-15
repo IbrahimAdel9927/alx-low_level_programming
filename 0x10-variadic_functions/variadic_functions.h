@@ -2,7 +2,6 @@
 #define VARIADIC_H
 
 #include <stsio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 
 int _putchar(char c);
