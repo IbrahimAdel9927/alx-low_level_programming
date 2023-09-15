@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("\n");
 		return;
 	}
-	va_start(list);
+	va_start(list, n);
 	while (i--)
 	{
 		printf("%s%s", (s = va_arg(list, char *)) ? s : "(nil)",
