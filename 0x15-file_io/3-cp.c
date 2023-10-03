@@ -25,7 +25,7 @@ int main(int ac, char **av)
 	f_f = open(av[1], O_RDONLY);
 	if (f_f == -1)
 		dprintf(STDERR_FILENO, ER_NR, av[1]), exit(98);
-	t_f = open(av[2], O_WRONLY | O_CREAT | O_TRUNC , PER);
+	t_f = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PER);
 	if (t_f == -1)
 		dprintf(STDERR_FILENO, ER_NW, av[2]), exit(99);
 	while ((b = read(f_f, bu, R_B_S)) > 0)
