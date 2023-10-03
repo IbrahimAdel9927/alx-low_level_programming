@@ -19,14 +19,15 @@ int _sl(char *s)
 }
 
 /**
- * create_file - a function that creates a file.
+ * append_text_to_file - a function that appends
+ * text at the end of a file.
  *
  * @filename: first input
  * @text_content: second input
  *
  * Return: int
 */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int f;
 	ssize_t bs = 0, ln = _sl(text_content);
